@@ -14,5 +14,4 @@ try {
 
 module.exports = sequelize;
 
-module.exports = sequelize;
 
