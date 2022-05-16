@@ -1,0 +1,26 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "crud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Revenant-Tech/crud-library-test.git"
+  },
+  "author": "rakkuia, KonigT, JoaoVitorAlvesR, SlaypZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Revenant-Tech/crud-library-test/issues"
+  },
+  "homepage": "https://github.com/Revenant-Tech/crud-library-test#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.16",
+    "sequelize": "^6.19.0"
+  }
+}
