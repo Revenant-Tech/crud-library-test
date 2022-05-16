@@ -7,6 +7,8 @@ const conn = require('./db/conn');
 
 const Books = require('./models/Books')
 
+const booksRoutes = require('./routes/booksRoutes')
+
 app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 
@@ -20,7 +22,7 @@ app.use(express.json());
 
 app.use(express.static('public'));
 
-app.use('/books', bookRoutes)
+app.use('/books', booksRoutes)
 
 conn 
 .sync()
