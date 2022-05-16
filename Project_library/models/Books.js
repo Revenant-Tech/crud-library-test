@@ -2,13 +2,15 @@ const { DataTypes } = require('sequelize');
 
 const db = require("../db/conn");
 
-const books = db.define('books', {
+const Books = db.define('Books', {
     title:{
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        required: true,
     },
     pages:{
-        type: DataTypes.INTEGER
-    }
+        type: DataTypes.INTEGER,
+        required: true,
+    },
 });
 
-module.exports = books;
+module.exports = Books;
