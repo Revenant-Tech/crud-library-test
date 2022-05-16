@@ -22,7 +22,7 @@ app.use(express.json());
 
 app.use(express.static('public'));
 
-app.use('/books', booksRoutes)
+app.use('/', booksRoutes)
 
 conn 
 .sync()
