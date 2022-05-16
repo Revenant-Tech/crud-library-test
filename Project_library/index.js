@@ -5,6 +5,8 @@ const app = express();
 
 const conn = require('./db/conn');
 
+const Books = require('./models/Books')
+
 app.engine('handlebars', exphbs.engine());
 app.set('view engine', 'handlebars');
 
@@ -26,3 +28,14 @@ conn
     app.listen(3000);
   })
   .catch((err) => console.log(err));
+
+conn 
+.sync()
+//.sync({force: true}) //restart toda a tabela e perde os dados, USEM PARA CRIAR A TABELA PARA VCS.
+.then(() => {
+    app.listen(3000)
+})
+.catch((err) => console.log(err))
+
+
+
