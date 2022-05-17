@@ -1,1 +1,16 @@
-<h1>Test</h1>
+<h2>Book List</h2>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Pages</th>
+  </tr>
+  {{#each books}}
+  <tr>
+    <td>{{this.id}}</td>
+    <td>{{this.title}}</td>
+    <td>{{this.pages}}</td>
+  </tr>
+   {{/each}}
+</table>
