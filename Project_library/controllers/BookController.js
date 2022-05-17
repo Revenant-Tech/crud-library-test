@@ -17,11 +17,12 @@ module.exports = class BookController {
     const book = {
       title: req.body.title,
       pages: req.body.pages,
+      done: false,
     };
 
     await Books.create(book);
 
-    res.redirect("/books");
+    res.redirect("/");
   }
 
 };
