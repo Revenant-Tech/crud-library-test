@@ -7,9 +7,9 @@ const sequelize = new Sequelize("library", "root", "", {
 
 try {
   sequelize.authenticate();
-  console.log("Conected in MySQL!");
+  console.log("Connected in MySQL!");
 } catch (error) {
-  console.log(`Don't be possible conect: ${error}`);
+  console.log(`Connection Refused: ${error}`);
 }
 
 module.exports = sequelize;

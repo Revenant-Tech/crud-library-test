@@ -26,7 +26,7 @@ app.use('/', booksRoutes)
 
 conn 
 .sync()
-//.sync({force: true}) //restart toda a tabela e perde os dados, USEM PARA CRIAR A TABELA PARA VCS.
+//.sync({force: true}) //RESET ALL TABLES.
 .then(() => {
     app.listen(3000)
 })
